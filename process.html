@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <mega charset="UTF-8"></mega>
+        <mega name="viewport" content="width=device-width, initial-scale=1.0"></mega>
+     <style>
+         body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+         }
+        nav {
+            background: #333;
+            color:#fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        nav .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        @media screen and (max-width: 768px){
+            nav ul {
+                display: none;
+                flex-direction:column;
+                background:#333;
+                position: absolute;
+                top:60px
+                left: 0;
+                width: 100%;
+            }
+            nav ul.show {
+                display: flex;
+            }
+            .hamburger{
+                display:block;
+            }
+        }
+         
+    </style>
+    </head>
+    <body>
+            <!--Navigation menu-->
+            <nav>
+                <div class="logo">Mambo Creatives</div>
+                <ul id="nav-links">
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="process.html">Process</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            </nav> 
+            <script>
+                function toggleMenu() {
+                    document.getElementById('nav-links').classList.toggle('show');
+                }
+            </script>
+        <h1> OUR PROCESS</h1>
+        <ul>
+            <li><b>Discovery:</b></li>We taKe time to understand your business goals, target audience
+            and unique challenges.
+            <li><b>Strategy:</b></li>Our team develops a tailored strategy that aligns with your objectives and resonates
+            with your audience.
+            <li><b>Creation:</b></li>We bring your brand to life with creative designs, compelling content, and innovative
+            solutions.
+            <li><b>Implementation:</b></li>Our team ensures seamless execution of your branding and marketing iniatives.
+            <li><b>Evaluation:</b></li>We continuosly monitor and optimize our work to ensure it meets your expectations
+            and drives results.
+        </ul>
+    </body>
+</div>
+    </head>
+</html>
